@@ -1,68 +1,28 @@
-# ECOBYTE — Smart Tech, Sustainable Future 🌱
+# ECOBYTE — Sustainable Electronics Advertisement Website
 
-**A sustainable electronics advertisement website inspired by UN Sustainable Development Goal 12 (SDG 12): Responsible Consumption and Production.**
+A five-page responsive website created as a student UI/advertisement assignment aligned with **SDG 12: Responsible Consumption and Production**.
 
-## 🌍 About the Project
+## Pages
+1. `index.html` — Home / campaign landing page
+2. `products.html` — Product catalogue with working category filters
+3. `product-details.html` — Product detail advertisement
+4. `sustainability.html` — SDG 12, e-waste and responsible use
+5. `contact.html` — Contact form with client-side validation
 
-ECOBYTE is a multi-page website designed to showcase electronic products while encouraging environmentally responsible purchasing and consumption habits. The website combines product advertising, clean visual design, and sustainability-focused content to demonstrate how technology can be presented alongside environmental awareness.
+## Run it
+1. Extract the ZIP file.
+2. Keep the folder structure unchanged.
+3. Open `index.html` in a browser, or use VS Code's Live Server extension.
+4. Internet is required for Bootstrap, Google Fonts and the remote product photography.
 
-This project was developed as an academic web design assignment focused on electronic product advertising and responsible consumption.
-
-## 🎯 Objectives
-
-- Create an attractive and responsive electronic product advertising website.
-- Present electronic products through dedicated product listings and details.
-- Promote sustainable purchasing, responsible consumption, and electronic waste awareness.
-- Provide intuitive navigation across multiple interconnected pages.
-- Demonstrate core front-end web development skills.
-
-## 📄 Website Pages
-
-| Page | Description |
-|---|---|
-| Home | Introduces the ECOBYTE brand and highlights featured products. |
-| Products | Displays electronic products with category filtering. |
-| Product Details | Presents additional information about a selected product. |
-| Sustainability | Explains the project's connection to SDG 12 and responsible consumption. |
-| Contact | Provides a contact form with client-side validation. |
-
-## 🛠️ Technologies Used
-
-- **HTML5** — Website structure and content
-- **CSS3** — Styling, responsive layouts, and animations
-- **JavaScript** — Interactive features, product filtering, and form validation
-- **Netlify** — Website deployment and public hosting
-- **GitHub** — Source code hosting and version control
-
-## 🌱 Sustainability Focus — SDG 12
-
-ECOBYTE supports the goals of **SDG 12: Responsible Consumption and Production** by encouraging users to consider product durability, energy efficiency, responsible purchasing, repair, reuse, and electronic waste reduction.
-
-The website uses electronics advertising as a platform to communicate that purchasing decisions can consider both functionality and environmental impact.
-
-## 🚀 Live Demo
-
-**Visit the website:** https://reliable-chimera-2aa65b.netlify.app
-
-## 💻 Run Locally
-
-1. Clone or download this repository.
-2. Open the project folder in Visual Studio Code.
-3. Open `index.html` using a local development server, such as the Live Server extension.
-4. Navigate through the website using its navigation menu.
-
-No backend server or database is required for the current front-end implementation.
-
-## 📁 Project Structure
-
+## Folder structure
 ```text
-ECOBYTE-Sustainable-Electronics/
+ecobyte-website/
 ├── index.html
 ├── products.html
 ├── product-details.html
 ├── sustainability.html
 ├── contact.html
-├── assets/
 ├── css/
 │   └── style.css
 ├── js/
@@ -70,22 +30,24 @@ ECOBYTE-Sustainable-Electronics/
 └── README.md
 ```
 
-##  Key Features
+## Interactions
+- All pages are connected through the shared navigation and footer.
+- Product category buttons filter the catalogue.
+- Product cards link to the product detail page.
+- Contact form validates required fields and email format in the browser.
 
-- Five interconnected web pages
-- Product category filtering
-- Dedicated product details page
-- Sustainability information aligned with SDG 12
-- Contact form with client-side validation
-- Consistent navigation and visual styling
-- Responsive layout and CSS animations
+## Important project notes
+- ECOBYTE is a fictional student-design brand.
+- Product names, specifications and prices are illustrative, not real commercial offers.
+- The contact form is front-end only; it does not send or store submissions.
+- Images are loaded from Unsplash URLs and require an internet connection.
+- To customize: edit the HTML content, `css/style.css` for design, and `js/main.js` for interactions.
 
-##  Academic Context
 
-**Assignment:** Advertisement for Electronic Products  
-**Sustainable Development Goal:** SDG 12 — Responsible Consumption and Production  
-**Purpose:** To demonstrate web design, front-end interactivity, visual communication, and sustainability awareness.
-
----
-
-*ECOBYTE — Smart Tech, Sustainable Future.*
+## Ambient music and fluid motion update
+- Includes an original, gentle ambient synth loop at `assets/ecobyte-ambient-loop.wav`.
+- A floating music dock appears on all five pages with Play/Pause and volume controls.
+- Music loops continuously while the page is open. After the user enables music once, the site remembers the preference and attempts to resume it on connected pages.
+- Browser autoplay policies can block audio until the user clicks Play; this is expected. The site does not force sound on without a user gesture.
+- Adds subtle page entrance, drifting orbit, floating note and hover transitions. Reduced-motion preferences are respected.
+- Page navigation reloads each HTML page, so the track may briefly restart between pages; seamless cross-page audio requires a single-page app or a persistent player architecture.
