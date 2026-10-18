@@ -44,10 +44,6 @@ ecobyte-website/
 - To customize: edit the HTML content, `css/style.css` for design, and `js/main.js` for interactions.
 
 
-## Ambient music and fluid motion update
-- Includes an original, gentle ambient synth loop at `assets/ecobyte-ambient-loop.wav`.
-- A floating music dock appears on all five pages with Play/Pause and volume controls.
-- Music loops continuously while the page is open. After the user enables music once, the site remembers the preference and attempts to resume it on connected pages.
-- Browser autoplay policies can block audio until the user clicks Play; this is expected. The site does not force sound on without a user gesture.
+## Fluid motion update
 - Adds subtle page entrance, drifting orbit, floating note and hover transitions. Reduced-motion preferences are respected.
 - Page navigation reloads each HTML page, so the track may briefly restart between pages; seamless cross-page audio requires a single-page app or a persistent player architecture.
